@@ -1,0 +1,176 @@
+.hero{
+display: flex;
+color:#6c6c6c;
+place-items: center;
+background-color: #1bc940;
+
+}
+
+.btn-price-box{
+
+  color:#000000;
+}
+
+.hero-subtext{
+margin-bottom: 2rem;
+line-height: 1.625;
+color: #000000;
+}
+
+.hero-details{
+max-width: 600px;
+}
+
+.hero-btn{
+border: none;
+color: #fff;
+background-color: #0044ff;
+padding: .5rem 1.5rem;
+font-size: 1.125rem;
+line-height: 1.75rem;
+border-radius: .25rem;
+cursor: pointer;
+margin: 0 1rem 7px auto;
+transition: .5s;
+}
+
+.hero-btn:hover{
+background-color: #4b1e75;
+}
+
+
+
+.product-img img{
+border-radius: 0.25rem;
+max-width: 100%;
+height: auto;
+}
+    
+.menu-search-box{
+padding: 1rem;
+}  
+.menu-search-box h1{
+text-transform: uppercase;
+color: #880505;
+   } 
+
+.grid-container{
+display: grid;
+place-items: center;
+place-content: center;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap:0.5em;
+padding: 0.8rem 0;
+
+}
+
+.card{
+   max-width: 350px;
+   border-radius: 6px;
+   padding: 1rem 0;
+   margin: 0.3rem 0;
+}
+
+.card img{
+   max-width: 100%;
+   object-fit: cover;
+   object-position: center;
+   display: grid;
+   margin: 1rem auto;
+   height: 250px;
+   border-top-left-radius:5px;
+   border-top-right-radius: 5px;
+}
+    
+.card-content{
+margin-top: 1rem;
+line-height: 24px;
+margin-bottom: 1rem;
+
+}
+
+.card-catogory{
+font-size: .75rem;
+font-family: 'Roboto', sans-serif;
+position: relative;
+letter-spacing: .1rem;
+margin-bottom: .25rem;
+line-height: 1rem;
+color: #7a7a7a;
+text-transform: uppercase;
+}
+
+.card-title{
+font-size: 1.125rem;
+line-height: 2.75rem;
+font-weight: 500;
+letter-spacing: 1px;
+color: #111827;
+margin: 0
+;
+}
+
+
+.card-price{
+color: #0f1111;
+font-weight: 600;
+margin-top: .25rem;
+}
+    
+
+/*@media starts here*/
+@media(min-width: 1024px){
+    .hero-text-br{
+    display: block;
+    }
+    
+    .product-img {
+    width: 100%;
+    }
+    }
+        
+    @media(min-width: 1024px){
+    .product-img {
+    max-width: 32rem;
+    }
+    }
+    
+    @media(min-width: 768px){
+    .hero{
+    flex-direction: row;
+    padding: 6rem 1.25rem;
+    margin: auto;
+    place-content: center;
+    place-items: center;
+    justify-content: space-evenly;
+    }
+    
+    .hero-text{
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+    .product-img {
+    width: 50%;
+    }
+    }
+    
+    @media(max-width:768px){
+    .hero{
+    flex-direction: column;
+    text-align: center;
+    }
+    }
+        
+    
+    @media(min-width:648px){
+    .hero-text{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    }
+    }
+    
+    

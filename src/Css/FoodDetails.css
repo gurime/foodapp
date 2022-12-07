@@ -1,0 +1,123 @@
+.hero-FoodDetails{
+display: flex;
+color:#6c6c6c;
+place-items: center;
+background-color: #12c940;
+
+margin: 10px auto;
+}
+
+.hero-details-box{
+max-width: 600px;
+}
+
+.btn-price-box{
+    display: flex;
+   float: left;
+   color:#000000;
+}
+
+.hero-FoodDetails img{
+border-radius: 0.25rem;
+max-width: 100%;
+height: auto;
+}
+
+.hero-FoodDetails-subtext{
+margin-bottom: 2rem;
+line-height: 1.625;
+color: #000000;}
+
+
+.menu-details-box{
+    max-width: 960px;
+    border: solid 1px;
+    margin: auto;
+}
+
+.calories-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calories-box h1{
+    font-size: 20px;
+}
+
+
+.satfat{
+    margin: auto;
+}
+
+.transfat{
+    margin: auto;
+}
+
+/*@media starts here*/
+@media(min-width: 1024px){
+
+  
+.hero-FoodDetails-img  {
+width: 100%;
+}
+}
+    
+@media(min-width: 1024px){
+.hero-FoodDetails-img {
+max-width: 32rem;
+}
+}
+
+@media(min-width: 768px){
+.hero-FoodDetails{
+flex-direction: row;
+padding: 6rem 1.25rem;
+margin: 10px auto;
+place-content: center;
+place-items: center;
+justify-content: space-evenly;
+}
+
+.hero-FoodDetails-text{
+text-align: left;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.hero-FoodDetails-img {
+width: 50%;
+}
+}
+
+@media(max-width:768px){
+.hero-FoodDetails{
+flex-direction: column;
+text-align: center;
+
+}
+
+.btn-price-box{
+margin-left:34% ;
+}
+
+
+
+
+
+
+.calories-box h1{
+    font-size: auto;
+}
+
+
+}
+    
+
+@media(min-width:648px){
+.hero-FoodDetails-text{
+font-size: 2.25rem;
+line-height: 2.5rem;
+margin-bottom: 1rem;
+font-weight: 500;
+}
+}
