@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Navbar from '@/Components/Navbar'
 import Footer from '@/Components/Footer'
+import Card from '@/Components/Menu/Card'
+import fs from 'fs';
+import path from 'path'
+import matter from 'gray-matter'
 
 
-
-export default function Home() {
+export default function Home({posts}) {
 return (
 <>
 <Head>
@@ -17,8 +20,73 @@ return (
 
 
 <Navbar/>
-<h1>Home </h1>
+<h1>
+<div className='card-grid'>
+{posts && posts.map((post, index) => (
+<Card key={index} post={post}/>
+))}
+</div>
+
+ </h1>
 <Footer/>
 </>
 )
 }
+
+export async function getStaticProps() {
+    // Get files from the feartered articles dir
+    const files = await fs.promises.readdir('Menu');
+    // const featuredFiles = await fs.promises.readdir('FeaturedMenu');
+      
+    // Get slug and frontmatter from blogs
+    const posts = await Promise.all(
+    files.map(async (filename) => {
+    // Create slug
+    const slug = filename.replace('.md', '');
+      
+    // Get frontmatter
+    const markdownWithMeta = await fs.promises.readFile(
+    path.join('Menu', filename),
+    'utf-8');
+      
+    const { data: frontmatter } = matter(markdownWithMeta);
+    return {
+    slug,
+    frontmatter,
+    };
+    })
+    );
+    // articles block
+     
+    // // featured articles block
+    // const featuredposts = await Promise.all(
+    // featuredFiles.map(async (filename) => {
+    // // Create slug
+    // const slug = filename.replace('.md', '');
+      
+    // // Get frontmatter
+    // const markdownWithMeta = await fs.promises.readFile(
+    // path.join('FeaturedArticles', filename),
+    // 'utf-8'
+    // );
+      
+    // const { data: frontmatter } = matter(markdownWithMeta); 
+    // return {
+    // slug,
+    // frontmatter,
+    // };
+    // })
+    // );
+    // // featured articles block
+   
+    posts.sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date));
+    // featuredposts.sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date));
+      
+    return {
+    props: {
+    posts,
+    // featuredposts,
+    
+    },
+    };
+    }
