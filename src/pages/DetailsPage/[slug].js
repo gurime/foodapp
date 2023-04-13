@@ -106,10 +106,7 @@ const folders = [
 
 ];
   
-const featuredFolders = [
-'FeaturedMenu',
 
-];
   
 let paths = [];
   
@@ -142,7 +139,7 @@ export function getStaticProps({ params: { slug } }) {
 const folders = [
 'Menu', 
 
-'FeaturedMenu',
+
 
 ];
     
