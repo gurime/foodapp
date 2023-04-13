@@ -18,6 +18,7 @@ return (
 <Link href="#!">Pizza</Link>
 <Link href="#!">Steak</Link>
 <Link href="#!">Fries</Link>
+<Link href="#!">Chicken</Link>
 <Link href="#!">Chili</Link>
 
 </div>

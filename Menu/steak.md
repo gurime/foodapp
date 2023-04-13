@@ -1,10 +1,15 @@
 ---
-title: "Steak"
-price: '13.99'
+title: "Grilled Ribeye Steak"
+price: '7.99'
 category: 'Steak'
-excerpt: "Home-made grilled steak with seasoning is a delicious and easy way to enjoy a juicy and flavorful steak."
+excerpt: "Grilled Ribeye Steak: Indulge in the rich, savory flavors of our Grilled Ribeye Steak. Our premium, hand-cut ribeye is seasoned to perfection with a blend of herbs and spices, then flame-grilled to your desired temperature."
 cover_image: '/img/steak.jpg'
 ---
+
+
+# Nutrition Facts
+
+### Serving Size: 1 Serving
 
 | Nutrient             | Amount   | % Daily Value* |
 |----------------------|---------:|---------------:|

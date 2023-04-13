@@ -24,7 +24,7 @@ return (
 <ul className="footer-navlink">
 <li><Link href='#!'>Career</Link></li>
 
-<li><Link href='#!' className="#!">About iTruth News</Link></li>
+<li><Link href='#!' className="#!">About Chick-a-licious</Link></li>
 
 <li><Link href='#!'>Investor Relations </Link></li>
 
@@ -73,15 +73,15 @@ return (
 <div className="footer-headline">Help Center</div>
 
 <ul className="footer-navlink" style={{borderBottom:'none'}}>
-<li><Link  href='#!'>Contact iTruth News</Link></li>
+<li><Link  href='/footerpages/contact'>Contact Chick-a-licious</Link></li>
 
-<li><Link  href='#!'>terms of Use</Link></li>
+<li><Link  href='/footerpages/termsofuse'>terms of Use</Link></li>
 
-<li><Link  href='#!'>Privacy Policies </Link></li>
+<li><Link  href='/footerpages/privacy'>Privacy Policies </Link></li>
 
-<li><Link  href='#!'>Cookie Policies</Link></li>
+<li><Link  href='/footerpages/Cookie'>Cookie Policies</Link></li>
 
-<li><Link href='#!'>Send Feedback</Link></li>
+<li><Link href='/footerpages/sendfeedback'>Send Feedback</Link></li>
 
 </ul>
 </div>

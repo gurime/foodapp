@@ -10,14 +10,14 @@ font-family: 'Montserrat', sans-serif;
 
 /* nav css starts here */
 .nav{
-background-color: #aa0202;
+background-color: #318e29;
 padding: 10px 0;
 display:flex;
 place-items:center;
 }
 
 .nav img{
-margin-right:auto;
+margin:auto;
 padding:0 1rem;
 cursor: pointer;
 }
@@ -26,7 +26,6 @@ cursor: pointer;
 display: flex;
 place-items: center;
 margin: auto;
-border: inset #fff;
 padding: 1rem;
 }
 
@@ -45,6 +44,8 @@ place-items: center;
 place-content: center;
 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 gap:1rem;
+margin: auto;
+max-width: 80rem;
 padding: 0.8rem 0; }
 
 .card {
@@ -160,6 +161,7 @@ padding: 0 15px;
 line-height: 2;
 font-weight: normal;
 padding: 0 1rem;
+margin-bottom: 1rem;
 }
   
 .body-content p{
@@ -271,7 +273,7 @@ font-size: 0.8em;
 /* footer css starts here */
 #footer{
 padding: 3px;
-background: #aa0202;
+background: #318e29;
 text-align: center;}
              
 .flex-footer{
@@ -321,6 +323,114 @@ margin: auto;
 cursor: pointer
 } 
 /* footer css starts here */
+
+/* termsofuse css page */
+.container-terms{
+display: grid;
+place-items: center;
+padding: 0 1rem;
+}
+
+.itterms h1{
+color: #318e29;
+letter-spacing: 1px;
+}
+
+.textblock{
+letter-spacing: 1px;
+}
+
+.textblock p{
+line-height: 2;
+font-weight: 600;
+font-size: 14px;
+}
+
+.textblock li{
+margin-bottom: 1rem;
+}
+
+/* termsofuse css page */
+
+
+
+/* feedback css */
+.feedback-block{
+margin: auto;
+width: auto;
+padding: 0 1rem;
+}
+/* feedback css */
+
+
+/* contact css page */
+.contact_title_img{
+display: flex;
+place-content: center;
+place-items: center;
+flex-direction: column;
+padding: 1rem 0;
+background-color: #318e29;
+}
+
+.conimg{
+width: 100%;
+height: auto;
+}
+
+.contact_title_img p{
+font-size: 1.125rem;
+line-height: 1.5;
+width: 52rem;
+color: #fff;
+}
+
+.formbox{
+display: flex;
+flex-direction: column;
+
+margin: 1rem auto;
+border-bottom: solid 1px grey;
+}
+
+.formbox label{
+margin-bottom: 1rem;
+letter-spacing: 1px;
+text-transform: capitalize;
+}
+
+.formbox input{
+padding: 1rem 0;
+margin-bottom: 1rem;
+outline: none;
+width: 30vw;
+}
+
+.formbox select{
+padding: 1rem 0;
+margin-bottom: 1rem;
+outline: none;   
+width: 15vw;
+}
+
+.formbox textarea{
+resize: none;
+margin-bottom: 1rem;
+width: 30vw;
+}
+
+.formbox button{
+background-color: #318e29;
+border: none;
+border-radius: 10px;
+color: #fff;
+cursor: pointer;
+outline: none;
+padding: 20px;
+}
+    
+    
+    /* contact css page */
 
 @media(max-width:768px){
 /* @nav css starts here */

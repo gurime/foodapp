@@ -1,14 +1,14 @@
 ---
-title: "Burger"
-price: '11.99'
+title: "Classic Cheeseburger"
+price: '5.99'
 category: 'Burger'
-excerpt: "A burger made with lettuce, tomato, beef, and cheese is a classic combination that has been enjoyed by burger enthusiasts for decades."
+excerpt: "Classic Cheeseburger: Sink your teeth into our mouthwatering Classic Cheeseburger. A juicy beef patty cooked to perfection, topped with melted cheddar cheese, crisp lettuce, ripe tomato, and tangy pickles, all nestled between a fresh sesame seed bun."
 cover_image: '/img/burger.jpg'
 ---
 
 # Nutrition Facts
 
-### Serving Size 1 serving
+### Serving Size: 1 serving
 
 | Nutrient             | Amount   | % Daily Value* |
 |----------------------|---------:|---------------:|
