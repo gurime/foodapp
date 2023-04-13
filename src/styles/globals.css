@@ -26,6 +26,8 @@ cursor: pointer;
 display: flex;
 place-items: center;
 margin: auto;
+border: inset #fff;
+padding: 1rem;
 }
 
 .navlinks a{
@@ -51,15 +53,32 @@ margin-bottom: 20px;
 border-radius: 5px;
 }
 
+
+.card-title{
+font-weight: 300;
+font-size: 1.5rem;
+line-height: 2rem;
+margin: 18px 4px;
+padding: 0 10px;
+}
+
 .card img {
+width: 100%;
+height: auto;
 object-fit: cover;
-margin-bottom: 1rem;
+object-position: center;
 }
 
 .card h2 {
 font-size: 1.4rem;
 margin-bottom: 1rem;
 letter-spacing: 1px;
+}
+
+.card-content{
+margin: .75rem 1rem;
+line-height: 1.625;
+font-weight:normal;
 }
 
 .card p {
@@ -81,6 +100,7 @@ transition: 0.3s ease-in-out;
 .card button a{
 text-decoration: none;
 color: #fff;
+letter-spacing: 1px;
 }
 
 .card button:hover{
@@ -149,10 +169,22 @@ letter-spacing: 1px;}
 .body-content li{
 font-weight: 500;
 }
+
+.body-content h1{
+letter-spacing: 1px;
+}
+
+.body-content h3{
+letter-spacing: 1px;
+}
   
 .body-content img{
 width: 100%;
 object-fit: cover;
+}
+
+.body-content li{
+letter-spacing: 1px;
 }
         
 .authflex{
@@ -163,12 +195,77 @@ justify-content: space-between
         
 .authflex p{
 margin: .75rem 1rem;
-background:linear-gradient(to bottom,#0059ff,#738dff) ;
+background:linear-gradient(to bottom,#ff5100,#eaa206) ;
 border-radius: 7px;
 padding: 5px 8px;
 color: #fff;  
 font-weight: 300;
 }  
+
+
+  
+
+
+
+  
+table {
+width: 100%;
+border-collapse: collapse;
+border-bottom: solid;
+}
+  
+thead {
+background-color: #eee;
+}
+  
+th,
+td {
+padding: 10px;
+text-align: left;
+border-right: solid;
+border-top: solid;
+border-left: solid;
+}
+  
+
+  
+td:first-child {
+font-weight: bold;
+}
+  
+td:nth-child(2) {
+text-align: right;
+}
+  
+td:last-child {
+text-align: center;
+}
+  
+td:empty:before {
+ content: "";
+}
+
+table tr:last-child td {
+border-bottom: none;
+}
+  
+table td:nth-child(3)::after {
+content: " ";
+}
+  
+table td:nth-child(3) {
+text-align: center;
+}
+  
+table td:nth-child(3):empty:before {
+content: "";
+}
+  
+table td:nth-child(3):not(:empty):after {
+content: " ";
+font-size: 0.8em;
+}
+  
 /* article slug css starts here */
 
 /* footer css starts here */
@@ -251,14 +348,14 @@ font-size: 15.4px;
 
 /* @footer css strats here */
 .flex-footer{
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    }
-    
-    .footer-navlink{
-    border-bottom: solid 1px #fff;
-    }
+display: flex;
+place-content: center;
+flex-direction: column;
+}
+
+.footer-navlink{
+border-bottom: solid 1px #fff;
+}
     
 .footer-tablebox{
 border-right: none;

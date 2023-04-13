@@ -5,6 +5,7 @@ import path from 'path';
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm';
 import Footer from '@/Components/Footer'
 import Navbar from '@/Components/Navbar'
 
@@ -65,7 +66,7 @@ $ {price}
 </div>
 {/**block for category and author */}
 <div className="body-content">
-<ReactMarkdown children={content} />
+<ReactMarkdown remarkPlugins={[remarkGfm]} children={content} />
 </div>
 
 

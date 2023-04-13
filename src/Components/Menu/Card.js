@@ -16,7 +16,7 @@ return (
 <p className="card-content">{frontmatter.excerpt}</p>
 <div style={{display:'flex',placeItems:'center',justifyContent:'space-between',padding:'0 10px'}}>
 <Link href={`/DetailsPage/${post.slug}`} className='slugbtn btn'>
-  <button className="card-button" rel="noreferrer"> More</button>
+  <button className="card-button" rel="noreferrer"> Delicious Food</button>
 </Link>
 <p style={{
 color:'red'

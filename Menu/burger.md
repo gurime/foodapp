@@ -2,11 +2,13 @@
 title: "Burger"
 price: '11.99'
 category: 'Burger'
-excerpt: "Are you looking to explore the great outdoors, but don’t have the time to plan a traditional camping or hiking trip? Then consider an African safari."
+excerpt: "A burger made with lettuce, tomato, beef, and cheese is a classic combination that has been enjoyed by burger enthusiasts for decades."
 cover_image: '/img/burger.jpg'
 ---
 
-## Nutrition Facts
+# Nutrition Facts
+
+### Serving Size 1 serving
 
 | Nutrient             | Amount   | % Daily Value* |
 |----------------------|---------:|---------------:|
@@ -29,4 +31,4 @@ cover_image: '/img/burger.jpg'
 | Vitamin A            | 0mcg     | 0%             |
 | Vitamin C            | 0mg      | 0%             |
 
-*The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.*
+* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.*

@@ -15,10 +15,10 @@ return (
 
 <div className="navlinks">
 <Link href="/">Home</Link>
-<Link href="/Technology">Technology</Link>
-<Link href="/Music">Music</Link>
-<Link href="/Politics">Politics</Link>
-<Link href="/Sports">Sports</Link>
+<Link href="#!">Pizza</Link>
+<Link href="#!">Steak</Link>
+<Link href="#!">Fries</Link>
+<Link href="#!">Chili</Link>
 
 </div>
 </div>
