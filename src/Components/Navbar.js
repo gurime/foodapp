@@ -20,7 +20,6 @@ return (
 <Link href="#!">Fries</Link>
 <Link href="#!">Chicken</Link>
 <Link href="#!">Chili</Link>
-
 </div>
 </div>
 </>

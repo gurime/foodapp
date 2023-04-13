@@ -3,7 +3,7 @@ title: "Homestyle Chili Beans "
 price: '7.99'
 category: 'Chili'
 excerpt: "Homestyle Chili Beans: Warm your soul with our Homestyle Chili Beans, a hearty and comforting dish that's packed with flavor. Our chili is made with a blend of tender beans, savory ground beef, and a secret spice mix that's been passed down for generations."
-cover_image: '/img/chili.jpeg'
+cover_image: '/img/chili.jpg'
 ---
 
 # Nutrition Facts
