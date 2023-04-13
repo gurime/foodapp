@@ -119,15 +119,7 @@ params: {slug: filename.replace('.md', '')
 );
 }
   
-for (const folder of featuredFolders) {
-const files = fs.readdirSync(path.join(process.cwd(), folder)); 
-paths.push(...files.map((filename) => ({
-params: {
-slug: filename.replace('.md', '')
-}
-}))
-);
-}
+
   
 return {
 paths,
