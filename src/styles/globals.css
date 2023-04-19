@@ -10,7 +10,7 @@ font-family: 'Montserrat', sans-serif;
 
 /* nav css starts here */
 .nav{
-background-color: #318e29;
+background-color: #298321;
 padding: 10px 0;
 display:flex;
 place-items:center;
@@ -273,7 +273,7 @@ font-size: 0.8em;
 /* footer css starts here */
 #footer{
 padding: 3px;
-background: #318e29;
+background: #298321;
 text-align: center;}
              
 .flex-footer{

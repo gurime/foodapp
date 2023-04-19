@@ -36,36 +36,33 @@ return (
 </div>
 {/*first tablebox stops here*/}
 <div className="footer-tablebox"> 
-<div className="footer-headline">News</div>
-
+<div className="footer-headline">Vegetables</div>
 <ul className="footer-navlink">
-<li><Link href='#!'>Finance</Link></li>
+<li><Link href='#!'>Carrots</Link></li>
 
-<li><Link href='#!'>Gaming</Link></li>
+<li><Link href='#!'>Broccoli</Link></li>
 
-<li><Link href='#!'>Entertainment </Link></li>
+<li><Link href='#!'>Spinach</Link></li>
 
-<li><Link href='#!'>Fashion</Link></li>
+<li><Link href='#!'>Tomatoes</Link></li>
 
-<li><Link href='#!'>Education</Link></li>
-
+<li><Link href='#!'>Cucumbers</Link></li>
 </ul>
+
 </div>
 {/*seconds tablebox stops here*/}
 <div className="footer-tablebox"> 
-<div className="footer-headline">World News</div>
-
+<div className="footer-headline">Fruits</div>
 <ul className="footer-navlink">
-<li><Link href='#!'>Mexico</Link></li>
+<li><Link href='#!'>Apples</Link></li>
 
-<li><Link href='#!'>South America</Link></li>
+<li><Link href='#!'>Bananas</Link></li>
 
-<li><Link href='#!'>Europe </Link></li>
+<li><Link href='#!'>Oranges</Link></li>
 
-<li><Link href='#!'>Asia</Link></li>
+<li><Link href='#!'>Strawberries</Link></li>
 
-<li><Link href='#!'>Africa</Link></li>
-
+<li><Link href='#!'>Grapes</Link></li>
 </ul>
 </div>
 {/*third tablebox stops here*/}

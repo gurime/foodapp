@@ -20,51 +20,50 @@ return (
 
 
 <Navbar/>
-<h1>
+
 <div className='card-grid'>
 {posts && posts.map((post, index) => (
 <Card key={index} post={post}/>
 ))}
 </div>
 
- </h1>
+
 <Footer/>
 </>
 )
 }
 
 export async function getStaticProps() {
-    // Get files from the feartered articles dir
-    const files = await fs.promises.readdir('Menu');
-      
-    // Get slug and frontmatter from blogs
-    const posts = await Promise.all(
-    files.map(async (filename) => {
-    // Create slug
-    const slug = filename.replace('.md', '');
-      
-    // Get frontmatter
-    const markdownWithMeta = await fs.promises.readFile(
-    path.join('Menu', filename),
-    'utf-8');
-      
-    const { data: frontmatter } = matter(markdownWithMeta);
-    return {
-    slug,
-    frontmatter,
-    };
-    })
-    );
-    // articles block
+// Get files from the feartered articles dir
+const files = await fs.promises.readdir('Menu');
+  
+// Get slug and frontmatter from blogs
+const posts = await Promise.all(
+files.map(async (filename) => {
+// Create slug
+const slug = filename.replace('.md', '');
+  
+// Get frontmatter
+const markdownWithMeta = await fs.promises.readFile(
+path.join('Menu', filename),
+'utf-8');
+  
+const { data: frontmatter } = matter(markdownWithMeta);
+return {
+slug,
+frontmatter,
+};
+})
+);
+// articles block
 
-   
-    posts.sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date));
-      
-    return {
-    props: {
-    posts,
-   
-    
-    },
-    };
-    }
+posts.sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date));
+  
+return {
+props: {
+posts,
+
+
+},
+};
+}
