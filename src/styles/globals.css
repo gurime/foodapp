@@ -111,7 +111,7 @@ background-color: #0a92e6;
 
 /* article slug css starts here */
 .article-container{
-max-width: 80rem;
+max-width: 50rem;
 margin: auto;
 }
  
@@ -440,16 +440,20 @@ padding: 1rem 0;
 }
 .navlinks{
 flex-wrap: wrap;
-margin: auto;
-margin-bottom: 1rem;
 }
 
 .navlinks a{
 padding: 10px;
 margin: auto;
-font-size: 15.4px;
+font-size: 12px;
 }
 /* @nav css stops here */
+
+/* @article css */
+.backbtn-box h1{
+font-size: 20px;
+}
+/* @article css */
 
 
 /* @footer css strats here */
