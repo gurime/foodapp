@@ -13,7 +13,7 @@ return (
 
 </div> 
 <h2 className="card-title">{frontmatter.title}</h2>
-<p className="card-content">{frontmatter.excerpt}</p>
+<p className="card-content">{frontmatter.excerpt.slice((0,100))}...</p>
 <div style={{display:'flex',placeItems:'center',justifyContent:'space-between',padding:'0 1rem'}}>
 <Link href={`/DetailsPage/${post.slug}`} className='slugbtn btn'>
   <button className="card-button" rel="noreferrer"> Delicious Food</button>
